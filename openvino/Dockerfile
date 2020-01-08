@@ -10,6 +10,6 @@ RUN wget https://github.com/libusb/libusb/archive/v1.0.23.tar.gz && \
     cd libusb-1.0.23 && \
     ./bootstrap.sh && \
     ./configure --disable-udev --enable-shared  && \
-    make -j 4 && \
+    make && \
     make install && \
     ldconfig /usr/local/lib
